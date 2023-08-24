@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/myAddition"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="8dp"
+        android:text="Addition"
+        app:layout_constraintBottom_toTopOf="@+id/Multiplication"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterNum1" />
+
+    <Button
+        android:id="@+id/myPower"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="133dp"
+        android:text="Power"
+        app:layout_constraintBottom_toTopOf="@+id/myStatisticFunctions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mySquareRoot" />
+
+    <Button
+        android:id="@+id/mySquareRoot"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="10dp"
+        android:text="Square Root"
+        app:layout_constraintBottom_toTopOf="@+id/myPower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myDivision" />
+
+    <Button
+        android:id="@+id/myDivision"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="6dp"
+        android:text="Division"
+        app:layout_constraintBottom_toTopOf="@+id/mySquareRoot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myMultiplication" />
+
+    <Button
+        android:id="@+id/myMultiplication"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="4dp"
+        android:text="Multiplication"
+        app:layout_constraintBottom_toTopOf="@+id/myDivision"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myMultiplication" />
+
+    <Button
+        android:id="@+id/mySubtraction"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="10dp"
+        android:text="Subtraction"
+        app:layout_constraintBottom_toTopOf="@+id/myMultiplication"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myAddition" />
+
+    <EditText
+        android:id="@+id/enterNum1"
+        android:layout_width="116dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/enterNum2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enterNum2"
+        android:layout_width="116dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/myAddition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/myStatisticFunctions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="104dp"
+        android:text="Statistic Functions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myPower" />
+
+    <TextView
+        android:id="@+id/myAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginBottom="100dp"
+        android:text="Answer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/enterNum"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="429dp"
+        android:text="Enter Two Numbers:"
+        app:layout_constraintBottom_toTopOf="@+id/myAnswer"
+        app:layout_constraintEnd_toStartOf="@+id/enterNum1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
